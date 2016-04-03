@@ -89,7 +89,7 @@
 	<script src="../external/jquery-2.2.1.min.js"></script>
 	
 	<!-- FormSaver -->
-	<script src="../src/html5FormSaver.js"></script>
+	<script src="../src/html5FormRefiller.js"></script>
 	
 	<!-- Bootstrap -->
 	<script src="../external/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
@@ -98,8 +98,17 @@
 		
 		$(function() {
 			
-			saver = $("#myForm").formSaver({
-				saveAttribute: "save"
+			saver = $("#myForm").formRefiller({
+				saveAttribute: "save",
+				beforeSave: function(data) {
+					console.log("before");
+				},
+				afterSave: function() {
+					console.log("after");
+				},
+				afterRefill: function() {
+					console.log("afterRefill")
+				}
 			});
 		
 		});
