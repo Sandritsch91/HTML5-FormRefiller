@@ -99,16 +99,7 @@
 		$(function() {
 			
 			saver = $("#myForm").formRefiller({
-				saveAttribute: "save",
-				beforeSave: function(data) {
-					console.log("before");
-				},
-				afterSave: function() {
-					console.log("after");
-				},
-				afterRefill: function() {
-					console.log("afterRefill")
-				}
+				saveAttribute: "save"
 			});
 		
 		});
