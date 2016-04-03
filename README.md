@@ -1,5 +1,5 @@
 # HTML5-FormRefiller
-Saves the data from a HTML5-Form into the local storage and refills the form on the next visit.
+Saves the data from a HTML5-Form into the local storage on submit, and refills the form on the next visit.
 
 ##How to use
 - Include jQuery `<script src="../external/jquery-2.2.1.min.js"></script>`
