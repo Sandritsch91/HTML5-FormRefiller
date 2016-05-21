@@ -7,6 +7,18 @@ Saves the data from a HTML5-Form into the local storage on submit, and refills t
 - Add an attribute to every input, select etc you want to save `<select name="select" class="form-control" save>`
 - call the plugin on your form 
 
+``` html
+<form id="myForm" action="#" method="POST">
+			
+	<div class="form-group">
+		<label for="exampleInputPassword1">Input</label>
+		<input type="text" name="input" class="form-control" id="exampleInputPassword1" placeholder="Password" save>
+	</div>
+	
+	<button type="submit" class="btn btn-default">Submit</button>
+</form>
+```
+
 ``` javascript
 $(function() {
 	saver = $("#myForm").formRefiller({
